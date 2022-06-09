@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="bt1">
+      <div class="debai">
+        <h2>Bài 1: Tính tiền lương nhân viên</h2>
+        <p>
+          Viết chương trình tính tiền lương nhân viên<br />
+          Lương 1 ngày: 100.000<br />
+          Cho người dùng nhập vào số ngày làm.<br />
+          Công thức tính lương:Lương 1 ngày * số ngày làm.
+        </p>
+      </div>
+      <div class="main-1">
+        <form action="#">
+          <input
+            class="luongngay"
+            type="number"
+            id="luong1Ngay"
+            placeholder="Nhập lương một ngày..."
+            min="1"
+          />
+          <input
+            class="ngaylam"
+            type="number"
+            id="soNgayLam"
+            placeholder="Số ngày làm..."
+            min="1"
+          />
+          <button class="btn btn-success" id="ketQua">Tính Lương</button>
+        </form>
+        <div class="alert btn-alert bg-warning w-50 mt-2">
+          <i class="fa fa-hand-point-right"></i><span id="luong">0</span>
+        </div>
+      </div>
+    </div>
+    <div class="bt2">
+      <div class="debai2">
+        <h2>Bài 2:Tính giá trị trung Bình</h2>
+        <p>
+          Viết chương trình nhập vào 5 số thực.<br />
+          Tính giá trị trung bình của 5 số này xuất ra màn hình<br />
+        </p>
+      </div>
+      <div class="main-2">
+        <input
+          class="btn1 m-1"
+          type="number"
+          id="soThu1"
+          placeholder="Nhập số thứ 1.."
+        />
+        <input
+          class="btn2 m-1"
+          type="number"
+          id="soThu2"
+          placeholder="nhập số thứ 2.."
+        />
+        <input
+          class="btn3 m-1"
+          type="number"
+          id="soThu3"
+          placeholder="Nhập số thứ 3.."
+        />
+        <input
+          class="btn4 m-1"
+          type="number"
+          id="soThu4"
+          placeholder="Nhập số thứ 4.."
+        />
+        <input
+          class="btn5 m-1"
+          type="number"
+          id="soThu5"
+          placeholder="Nhập số thứ 5.."
+        /><br />
+        <button class="btn btn-success py-1 px-3 my-2" id="btnTrungBinh">
+          Tính trung bình
+        </button>
+      </div>
+      <div class="alert btn-alert w-50 bg-warning">
+        <i class="fa fa-hand-point-right"></i>
+        <span id="ketQua2"></span>
+      </div>
+    </div>
+    <div class="bt3">
+      <h2>Bài3: Quy đổi tiền</h2>
+      <p>
+        Giá USD hiện nay là 23.500 VND<br />
+        Viết chương trình quy đổi từ USD sang VND<br />
+        Cho người dùng nhập vào số tiền USD.<br />
+        Tính và xuất ra số tiền sau quy đổi VND.<br />
+      </p>
+      <div class="main-3">
+        <input type="number" id="soTiendoi" placeholder="Nhập số tiền USD"><br>
+        <button class="btn btn-success my-2" style="border-radius:20px ;" id="btnDoitien">Quy đổi tiền</button>
+        <div class="alert btn-alert w-50 bg-warning">
+          <i class="fa fa-hand-point-right"></i>
+          <span id="ketQua3"></span>
+        </div>
+    </div>
+    <div class="bt4">
+      <h2>Bài 4: Tính diện tích, chu vi hình chữ nhật</h2>
+      <p>
+        Viết chương trình nhập vào 2 chiều dài và chiều rộng của hình chữ
+        nhật.<br />
+        Tính và xuất ra diện tích, chu vi của HCN đó.<br />
+        Công Thức:<br />
+        -Diện tích =dài * rộng<br />
+        -Chu vi =(dài+rộng)<br />
+      </p>
+      <input type="number" id="chieuDai" placeholder="Nhập chiều dài..">
+      <input type="number" id="chieuRong" placeholder="Nhập chiều rộng.."><br>
+      <button class="btn btn-success my-2 px-3" style="border-radius:20px ;" id="btnTinh">Tính</button>
+      <div class="alert btn-alert w-50 bg-warning">
+        <i class="fa fa-hand-point-right"></i>
+        <span id="ketQua4"></span>
+      </div>
+    </div>
+    <div class="bt5">
+      <h2>Bài 5: Tính tổng 2 ký số</h2>
+      <p>
+        Viết chương trình nhập vào 1 số có hai chữ số.<br />
+        Tính tổng 2 ký số của số vừa Nhập
+      </p>
+      <input type="number" id="soNhapvao" placeholder="Nhập vào số có 2 chữ số.."><br>
+      <button class="btn btn-primary my-2" id="btnTinhTong" style="border-radius:20px ;">Tính Tổng</button>
+      <div class="alert btn-alert w-50 bg-warning">
+        <i class="fa fa-hand-point-right"></i>
+        <span id="ketQua5"></span>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js.js"></script>
+  </body>
+</html>
